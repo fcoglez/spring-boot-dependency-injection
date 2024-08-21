@@ -4,23 +4,25 @@ public class Product implements Cloneable{
 
     private Integer id;
     private String name;
-    private Integer price;
+    private Double price;
+    private String description;
+
 
 
     public Product() {
     }
 
-    public Product(Integer id, String name, Integer price) {
+    public Product(Integer id, String name, Double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -38,6 +40,14 @@ public class Product implements Cloneable{
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
